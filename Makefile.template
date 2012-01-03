@@ -1,0 +1,20 @@
+# Template Makefile
+#
+# Rename this file to Makefile for it to work properly with make.
+#
+
+
+# set TARGETS to a space-separated list of all executables you want to compile.
+TARGETS = 
+
+
+# default target (when running `make` without arguments)
+all : $(TARGETS)
+
+
+% : %.c
+	g++ $< -o $@
+
+
+clean :
+	rm $(TARGETS)
