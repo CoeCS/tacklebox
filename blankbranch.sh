@@ -7,11 +7,12 @@ if [[ -n `git branch | grep "^[ \t*]\+$1$"` ]]; then
 fi
 
 if [[ $# < 1 ]]; then
-    echo "you must specify the new repository name."
+    echo "$0: you must specify the repository name"
+    echo "usage: $0 <branchname>"
     exit 10
 fi
 
-read -p "Really create blank branch '$1'? " -n 1
+read -p "Really create blank branch '$1' (y/n)? " -n 1
 echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
