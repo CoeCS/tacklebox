@@ -12,7 +12,7 @@ if [[ $# < 1 ]]; then
     exit 10
 fi
 
-read -p "Really create blank branch '$1' (y/n)? " -n 1
+read -p "Really create blank branch '$1'? (y/n) " -n 1
 echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
