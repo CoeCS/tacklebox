@@ -3,7 +3,7 @@
 Repository of useful tools for CS at Coe.  Includes scripts
 to help management of class repositories and templates for Makefiles.
 
-## `Makefile`
+## Makefile
 
 This is a generic `Makefile` that can be used to easily compile a
 single executable that depends only it's corresponding source file
@@ -11,13 +11,13 @@ single executable that depends only it's corresponding source file
 output as `fun`.  
 
 
-## `blankbranch.sh`
+## blankbranch.sh
 
 Shell script to create a new *blank* git branch in the current
 directory.
 
 
-## `stableroomate`
+## stableroomate
 
 Contains the `stableroomate.py` script to calculate stable pairings
 based off a preference list.  Format of the preference list is a CSV
