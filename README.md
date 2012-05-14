@@ -10,12 +10,10 @@ single executable that depends only it's corresponding source file
 (.c).  Using this file you can type `make fun` to compile `fun.c` and
 output as `fun`.  
 
+## git
 
-## blankbranch.sh
-
-Shell script to create a new *blank* git branch in the current
-directory.
-
+Collection of *git* scripts for manipulating a directory full of student
+repositories.
 
 ## stableroommate
 
