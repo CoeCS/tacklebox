@@ -1,15 +1,15 @@
 #!/bin/bash
 
 
-if [[ -n `git branch | grep "^[ \t*]\+$1$"` ]]; then
-    echo "branch '$1' already exists."
-    exit 5
-fi
-
 if [[ $# < 1 ]]; then
     echo "$0: you must specify the repository name"
     echo "usage: $0 <branchname>"
     exit 10
+fi
+
+if [[ -n `git branch | grep "^[ \t*]\+$1$"` ]]; then
+    echo "branch '$1' already exists."
+    exit 5
 fi
 
 read -p "Really create blank branch '$1'? (y/n) " -n 1
