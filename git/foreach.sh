@@ -5,7 +5,7 @@ if [ $# -lt 1 ]; then
     exit -1
 fi
 
-for repo in `find ./ -maxdepth 1 -mindepth 1 -printf "%P\n"`
+for repo in `find ./ -maxdepth 1 -mindepth 1 | xargs basename`
 do
     cd $repo
     $@
