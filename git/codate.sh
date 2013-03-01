@@ -6,6 +6,4 @@ if [ $# -lt 1 ]; then
 fi
 
 
-git checkout `git rev-list -n 1 --before="$@" master` 
-
-
+git checkout `git rev-list -n 1 --before="$@" master`
