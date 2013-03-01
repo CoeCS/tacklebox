@@ -6,7 +6,8 @@ if [ $# -lt 1 ]; then
     exit -1
 fi
 
-for repo in `find ./ -maxdepth 1 -mindepth 1 | xargs basename`
+#for repo in `find ./ -name .git | cut -d/ -f2`
+for repo in `find ./ -name .git | sed "s/^.*\/\(.*\)\/.git/\1/"`
 do
     echo "cd $repo"
     cd $repo
