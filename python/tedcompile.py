@@ -26,7 +26,7 @@ def main():
         sys.exit(1)
 
     if os.path.exists("__main__.py"):
-        sys.stderr.write("Error: __main__.py already exists in current directory.\n"
+        sys.stderr.write("Error: __main__.py already exists in current directory.\n")
         sys.exit(1)
 
     shutil.copyfile(filename, "__main__.py")
